@@ -4,6 +4,7 @@ stages:
   - deploy
 
 lint:
+  stage: lint
   image: node:16-alpine
   before_script:
     - cd src
@@ -14,6 +15,7 @@ lint:
     - main
 
 build:
+  stage: build
   image: docker:latest
   services:
     - docker:dind
@@ -24,6 +26,7 @@ build:
     - main
 
 deploy:
+  stage: deploy
   image: docker:latest
   services:
     - docker:dind
