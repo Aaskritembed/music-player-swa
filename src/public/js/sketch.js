@@ -98,7 +98,7 @@ function draw() {
 
   translate(width / 2, height / 2);
 
-  for (i = 0; i < pieces; i += 0.01) {
+  for (let i = 0; i < pieces; i += 0.01) {
     rotate(TWO_PI / pieces);
 
     /*----------  BASS  ----------*/
