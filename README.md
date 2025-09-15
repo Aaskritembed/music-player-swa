@@ -43,6 +43,24 @@ Then just open Postman at **localhost:8000** and test the requests
 
 And voilà! :heart: :heart:
 
+## 🐳 Running with Docker
+
+If you prefer to run the application using Docker:
+
+1. Build the Docker image:
+
+```
+docker build -t music-player-swa .
+```
+
+2. Run the container:
+
+```
+docker run -p 8000:8000 music-player-swa
+```
+
+The application will be available at **localhost:8000**.
+
 ## ❗️ Important Resources and Links
 
 - ✅ **[Official Azure Static Web Apps Documentation](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=javascript-0000-gllemos)**
