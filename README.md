@@ -61,6 +61,27 @@ docker run -p 8000:8000 music-player-swa
 
 The application will be available at **localhost:8000**.
 
+## 🔄 GitLab CI/CD Pipeline
+
+This project includes a GitLab CI/CD pipeline for automated building and deployment.
+
+### Connecting GitHub to GitLab
+
+1. Create a new project in GitLab.
+2. Choose "Import project" > "Repository by URL".
+3. Enter the GitHub repository URL: `https://github.com/Aaskritembed/music-player-swa.git`
+4. Follow the prompts to import the repository.
+
+### CI/CD Pipeline
+
+The `.gitlab-ci.yml` file defines the pipeline with the following stages:
+
+- **Lint**: Runs ESLint to check code quality.
+- **Build**: Builds the Docker image and pushes it to the GitLab Container Registry.
+- **Deploy**: Pulls the image and runs the container in the production environment.
+
+The pipeline triggers on pushes to the `main` branch.
+
 ## ❗️ Important Resources and Links
 
 - ✅ **[Official Azure Static Web Apps Documentation](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=javascript-0000-gllemos)**
