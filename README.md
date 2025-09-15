@@ -1,57 +1,57 @@
-# 🎵 Music Player com P5.js + SWA + GitHub Actions
+# 🎵 Music Player with P5.js + SWA + GitHub Actions
 
 <p align="center">
   <img src="./media/p5js-swa-demo.png" alt="Music Player P5.js + SWA" width="100%">
 </p>
 
-Music Player em JavaScript usando a biblioteca **[p5.js](https://p5js.org/examples/)**. O projeto foi baseado no seguinte artigo **[AQUI](https://tympanus.net/codrops/2018/03/06/creative-audio-visualizers/)**
+Music Player in JavaScript using the **[p5.js](https://p5js.org/examples/)** library. The project is based on the following article **[HERE](https://tympanus.net/codrops/2018/03/06/creative-audio-visualizers/)**
 
-A intenção dessa demo é não ensinar sobre o p5.js, mas sim, mostrar a todos como é fácil realizar deploy de aplicações estáticas usando o serviço Azure Static Web Apps e como podemos integrar facilmente com o GitHub Actions!
+The intention of this demo is not to teach about p5.js, but rather to show everyone how easy it is to deploy static applications using the Azure Static Web Apps service and how we can easily integrate with GitHub Actions!
 
-Caso desejam saber um pouco mais sobre a biblioteca p5.js, estarei disponibilizando links e recursos necessários sobre a bíblioteca aqui no README.md
+If you want to know a bit more about the p5.js library, I will be providing links and necessary resources about the library here in the README.md
 
-## 🚀 Recursos Utilizados 
+## 🚀 Resources Used
 
-- **[Visal Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-gllemos)**
+- **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-gllemos)**
 - **[JavaScript library - P5.js](https://p5js.org/examples/)**
 - **[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=javascript-0000-gllemos)**
-- **[Vs Code Extension - Azure Static Web Apps](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&WT.mc_id=javascript-0000-gllemos)**
+- **[VS Code Extension - Azure Static Web Apps](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&WT.mc_id=javascript-0000-gllemos)**
 - **[GitHub Actions](https://docs.github.com/en/actions)**
-- **[Conta Azure Free](https://azure.microsoft.com/free/?WT.mc_id=javascript-0000-gllemos)**
+- **[Free Azure Account](https://azure.microsoft.com/free/?WT.mc_id=javascript-0000-gllemos)**
 
-## ⭐️ Conta - Azure For Students 
+## ⭐️ Account - Azure For Students
 
-Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade ou Universidade, poderá criar sua conta no **[Azure for Students](https://azure.microsoft.com/free/students/?WT.mc_id=javascript-0000-gllemos)**. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: **[AQUI](https://azure.microsoft.com/free/students/?WT.mc_id=javascript-0000-gllemos)**
+If you are a student at a College or University Educational Institution, you can create your account on **[Azure for Students](https://azure.microsoft.com/free/students/?WT.mc_id=javascript-0000-gllemos)**. This account will give you the benefit of having USD 100.00 credit to use the services for free, without needing a credit card. To activate this account, just access the link next to it: **[HERE](https://azure.microsoft.com/free/students/?WT.mc_id=javascript-0000-gllemos)**
 
-## 🔥 Executando aplicação Localmente
+## 🔥 Running the Application Locally
 
-Antes de iniciar os passos abaixo é muito importante que você execute nesse momento o MongoDb localmente!
+Before starting the steps below, it is very important that you run MongoDB locally at this moment!
 
-1) Instalar os pacotes com o comando: (dentro da pasta `src`)
+1) Install the packages with the command: (inside the `src` folder)
 
-``` 
+```
 > npm install
 ```
 
-2) Depois executar o seguinte comando para executar a aplicação (dentro da pasta `src`):
+2) Then run the following command to run the application (inside the `src` folder):
 
 ```
 > npm run start
 ```
 
-Depois bastam abrir o postamn em **localhost:8000** e testar as requisições
+Then just open Postman at **localhost:8000** and test the requests
 
-E vòilá! :heart: :heart:
+And voilà! :heart: :heart:
 
-## ❗️ Recursos e Links Importantes
+## ❗️ Important Resources and Links
 
-- ✅ **[Documentação Oficial do Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=javascript-0000-gllemos)**
-- ✅ **[Curso Microsoft Learn - Publicando uma aplicação e API JavaScript do Angular, React, Svelte ou Vue com Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/?WT.mc_id=javascript-0000-gllemos)**
-- ✅ **[Curso Microsoft Learn - Criando e publicando uma aplicação Web estático com o Gatsby e Azure Static Web Apps](https://docs.microsoft.com/learn/modules/create-deploy-static-webapp-gatsby-app-service/?WT.mc_id=javascript-0000-gllemos)**
-- ✅ **[Curso Microsoft Learn - Compilando fluxos de trabalho de integração contínua (CI) com o GitHub Actions](https://docs.microsoft.com/learn/modules/github-actions-ci/?WT.mc_id=javascript-0000-gllemos)**
-- ✅ **[Documentação Oficial do P5.sound](https://p5js.org/reference/#/libraries/p5.sound)**
-- ✅ **[Artigo baseado na demo](https://tympanus.net/codrops/2018/03/06/creative-audio-visualizers/)**
+- ✅ **[Official Azure Static Web Apps Documentation](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=javascript-0000-gllemos)**
+- ✅ **[Microsoft Learn Course - Publishing a JavaScript application and API from Angular, React, Svelte or Vue with Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/?WT.mc_id=javascript-0000-gllemos)**
+- ✅ **[Microsoft Learn Course - Creating and publishing a static web application with Gatsby and Azure Static Web Apps](https://docs.microsoft.com/learn/modules/create-deploy-static-webapp-gatsby-app-service/?WT.mc_id=javascript-0000-gllemos)**
+- ✅ **[Microsoft Learn Course - Building continuous integration (CI) workflows with GitHub Actions](https://docs.microsoft.com/learn/modules/github-actions-ci/?WT.mc_id=javascript-0000-gllemos)**
+- ✅ **[Official P5.sound Documentation](https://p5js.org/reference/#/libraries/p5.sound)**
+- ✅ **[Article based on the demo](https://tympanus.net/codrops/2018/03/06/creative-audio-visualizers/)**
 
-## ❓ Tenho Dúvidas... O que Faço?! 
+## ❓ I Have Questions... What Do I Do?!
 
-Caso tenham dúvidas aos códigos desenvolvidos durante a série de artigos, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/glaucia86/music-player-swa/issues)**. Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
+If you have questions about the codes developed during the series of articles, feel free to open an **[ISSUE HERE](https://github.com/glaucia86/music-player-swa/issues)**. As soon as possible, I will be answering all the questions you have!
