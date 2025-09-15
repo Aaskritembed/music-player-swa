@@ -21,7 +21,7 @@ let colorPalette = ["#000000", "#FF00FF", "#FF0000", "#ADFF2F"];
 let uploadLoading = false;
 
 function preload() {
-  sound = loadSound("../audio/pumpup.mp3");
+  sound = loadSound("/audio/pumpup.mp3");
 }
 
 function uploaded(file) {
@@ -130,7 +130,7 @@ function toggleAudio() {
   if (sound.isPlaying()) {
     sound.pause();
   } else {
-    sound.play();
+    sound.loop();
   }
 }
 
