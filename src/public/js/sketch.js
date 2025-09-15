@@ -1,4 +1,5 @@
 // @ts-nocheck
+/* eslint-disable no-unused-vars */
 /**
  * file: sketch.js
  * data: 06/07/2020
