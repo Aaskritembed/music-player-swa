@@ -19,6 +19,8 @@ build:
   image: docker:latest
   services:
     - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
   script:
     - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG .
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
@@ -30,6 +32,8 @@ deploy:
   image: docker:latest
   services:
     - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
   script:
     - docker pull $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
     - docker run -d -p 8000:8000 --name music-player $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
