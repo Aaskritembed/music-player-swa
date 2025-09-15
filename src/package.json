@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon",
+    "lint": "eslint .",
     "prepush": "npm run lint",
     "start": "node server.js"
   },
