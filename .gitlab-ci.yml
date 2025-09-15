@@ -10,7 +10,7 @@ lint:
     - cd src
     - npm install
   script:
-    - npm run prepush
+    - npm run lint
   only:
     - main
 
@@ -21,6 +21,8 @@ build:
     - docker:dind
   variables:
     DOCKER_DRIVER: overlay2
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   script:
     - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG .
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
@@ -34,6 +36,8 @@ deploy:
     - docker:dind
   variables:
     DOCKER_DRIVER: overlay2
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   script:
     - docker pull $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
     - docker run -d -p 8000:8000 --name music-player $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
